@@ -1,0 +1,21 @@
+{
+  "name": "sample-monorepo",
+  "version": "1.0.0",
+  "description": "sample monorepo with a package and a remix app",
+  "author": "felipefreitag",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.3.1"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:ci": "turbo run test:ci"
+  }
+}
